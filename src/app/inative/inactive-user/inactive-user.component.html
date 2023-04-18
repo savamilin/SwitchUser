@@ -1,0 +1,6 @@
+<div *ngFor="let user of inactiveUser; let i = index">
+  <p>
+    {{ user.name }}
+    <a href="#" (click)="switchUser(i)">{{ user.messsage }}</a>
+  </p>
+</div>
